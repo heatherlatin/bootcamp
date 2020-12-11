@@ -1,0 +1,16 @@
+.name-div {
+    color: purple;
+}
+
+.cps-div {
+    color: blue;
+}
+
+.servings-div {
+    color: green;
+}
+
+.total-div {
+    color: orange;
+    border-bottom: 1px solid grey;
+}

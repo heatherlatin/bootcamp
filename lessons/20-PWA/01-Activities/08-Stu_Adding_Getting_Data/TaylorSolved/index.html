@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Adding and Getting Data</title>
+  </head>
+
+  <body>
+    <h1>Open Your Developer Tools > Application > IndexedDB</h1>
+    <script>
+      const request = window.indexedDB.open("toDoList", 1);
+      
+      request.onupgradeneeded = event => {
+        const db = event.target.result;
+       // CODE HERE
+        
+        // Creates an object store with a listID keypath that can be used to query on.
+        const toDoListStore = db.createObjectStore("toDoList", {keyPath: "listID"});
+        // Creates a dueDateIndex that we can query on.
+        toDoListStore.createIndex("dueDateIndex", "dueDate"); 
+      }
+
+      
+      request.onsuccess = () => {
+        const db = request.result;
+        // CODE HERE
+        const transaction = db.transaction(["toDoList"], "readwrite");
+        const toDoListStore = transaction.objectStore("toDoList");
+        const dueDateIndex = toDoListStore.index("dueDateIndex");
+  
+        // Adds data to our objectStore
+        toDoListStore.add({ listID: "1", task: "feed cats", dueDate: "11/15" });
+        toDoListStore.add({ listID: "2", task: "play with cats", dueDate: "11/15" });
+        toDoListStore.add({ listID: "3", task: "hang out with cats", dueDate: "11/16" });
+        toDoListStore.add({ listID: "4", task: "stay at home with cats", dueDate: "11/15" });
+       
+        // Return an item by keyPath
+        const getRequest = toDoListStore.getAll("1");
+        getRequest.onsuccess = () => {
+          console.log(getRequest.result);
+        };
+
+        // Return an item by index
+        const getRequestIdx = dueDateIndex.getAll("11/15");
+        getRequestIdx.onsuccess = () => {
+          console.log(getRequestIdx.result); 
+        }; 
+      };
+
+    </script>
+  </body>
+</html>

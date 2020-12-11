@@ -1,0 +1,21 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+.thought1 {
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 3px;
+}
+
+.thought2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.thought3 {
+    font-family: 'Pacifico', cursive;
+    width: 680px;
+    line-height: 1.5;
+}

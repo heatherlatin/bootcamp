@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Magical Cat Button</title>
+</head>
+
+<body>
+  <button id="cat-button">magical cat button</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    //when we click on something with the id cat-button, run the following function
+    $("#cat-button").on("click", function() {
+
+      // our source for grabbing gifs
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
+
+      // it will grab data from url (setting up for us getting data back)
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      //sets up some code to run after we get data from a url (use it to add gif to page)
+        .then(function(response) {
+
+        // we're storing a link to our gif in a variable for use later.
+          var imageUrl = response.data.image_original_url;
+
+          // create a new image tag and assign it to a variable.
+          var catImage = $("<img>");
+
+          // we are setting attributes on our image tag, src will be our gif
+          // and alt is for screen readers or broken images.
+          catImage.attr("src", imageUrl);
+          catImage.attr("alt", "cat image");
+
+          // prepending the cat image to make it no longer in lala land
+          $("#images").prepend(catImage);
+        });
+    });
+  </script>
+</body>
+
+</html>

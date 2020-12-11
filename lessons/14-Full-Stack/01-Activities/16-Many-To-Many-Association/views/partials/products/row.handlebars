@@ -1,0 +1,9 @@
+<tr>
+    <td>{{name}}</td>
+    {{> inventory/partial-row inventory }}
+    <td>{{description}}</td>
+    <td>
+        <a href="/inventory/edit/store/{{inventory.storeId}}/{{inventory.productId}}" class="btn btn-primary" type="button"><i class="fa fa-pencil"></i></a>
+        <button data-store-id="{{inventory.storeId}}" data-product-id="{{inventory.productId}}" class="delete-inventory-btn btn btn-danger" type="button"><i class="fa fa-trash"></i></button>
+    </td>
+</tr>

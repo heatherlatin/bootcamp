@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    background-color: #666;
+    color: #eee;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+nav {
+    float: right;
+    font-size: 16px
+}
+
+nav > a {
+    float: left;
+    text-decoration: none;
+    color: #eee;
+    padding: 0px 10px;
+    border-right: 1px solid #eee;
+}
+
+nav > a:last-child {
+    border-right: none;
+}
+
+.selected {
+    float: left;
+    background-color: #eee;
+    color: #666;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.remove-border {
+    border: none;
+}
+
+.bold {
+    font-weight: bold;
+}

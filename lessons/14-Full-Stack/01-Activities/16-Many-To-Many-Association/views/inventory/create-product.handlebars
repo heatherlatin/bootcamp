@@ -1,0 +1,8 @@
+<form class="create-inventory-form">
+    <input id="productId" name="productId" type="text" style="display:none;" value="{{id}}">
+    <h4>Add {{name}} to Inventory</h4>
+    {{> inventory/form }}
+    {{> stores/select }}
+    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script src="/assets/js/inventory/save.js"></script>

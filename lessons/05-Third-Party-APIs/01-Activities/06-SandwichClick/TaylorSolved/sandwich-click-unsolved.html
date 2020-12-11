@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Clicked</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Click to Eat Sandwich</h1>
+  <h3 id="pbj">Peanut Butter Jelly</h3>
+  <h3 id="grilledcheese">Grilled Cheese</h3>
+  <h3 id="roastbeef">Roast Beef</h3>
+
+  <div id="image-div"></div>
+
+  <script type="text/javascript">
+
+    // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+    // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
+    // It's useful to become familiar with now.
+
+    $(document).ready(function() {
+
+      // VARIABLES
+      // ====================================================================
+      // Here we create variables for tracking the number of sandwiches eaten
+      // ...
+      var $imageDiv = $("#image-div");
+      var pbjCount = 0;
+      var grilledCheeseCount = 0;
+      var roastBeefCount = 0;
+
+      // ...
+
+      // FUNCTIONS
+      // ====================================================================
+      // Here we create various on "click" functions which capture the clicks
+      // Inside each click event is the code to create an alert, update the counter, then show the updated count.
+      // ...
+
+      $("#pbj").on("click", function () {
+        alert("It's peanut butter jelly time!");
+        pbjCount++;
+        alert("PB & J sandwiches eaten so far: " + pbjCount);
+        var img = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Peanut-Butter-Jelly-Sandwich.png/250px-Peanut-Butter-Jelly-Sandwich.png";
+        $imageDiv.html('<img src="' + img + '">');
+      })
+      $("#grilledcheese").on("click", function () {
+        alert("ooey gooey cheesey grilled cheese.");
+        grilledCheeseCount++;
+        alert("Grilled Cheese sandwiches eaten so far: " + grilledCheeseCount);
+        var img = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/grilled-cheese-horizontal-jpg-1522266016.jpg";
+        var $img = $("<img>");
+        $img.attr("src", img)
+        $imageDiv.html($img);
+      })
+      $("#roastbeef").on("click", function () {
+        alert("roast beef.");
+        roastBeefCount++;
+        alert("Roast Beef sandwiches eaten so far: " + roastBeefCount);
+        var img = "https://marvel-cdn.bc0a.com/Campbellsoup/s3.amazonaws.com/origin.www.cscassets.com/recipes/wide_cknew/wide_25336.jpg";
+        $imageDiv.html("<img src='" + img + "'>");
+      })
+
+      // ...
+
+    });
+
+</script>
+
+</body>
+
+</html>

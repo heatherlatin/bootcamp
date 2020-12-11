@@ -1,0 +1,91 @@
+{
+    "stores": [
+    {
+        "id": 1,
+        "name": "Target",
+        "description": "Good store for T-Shirts"
+    },
+    {
+        "id": 2,
+        "name": "Ralphs",
+        "description": "Good store for normal groceries"
+    },
+    {
+        "id": 3,
+        "name": "Costco",
+        "description": "Better store for bulk groceries"
+    }
+],
+"products": [
+    {
+        "id": 1,
+        "name": "T-Shirt",
+        "description": "Pretty Nice Looking."
+    },
+    {
+        "id": 2,
+        "name": "Grocery",
+        "description": "Item of some sort."
+    },
+    {
+        "id": 3,
+        "name": "Bulk Grocery",
+        "description": "Item of some sort, too many, actually."
+    }
+],
+"inventory": [
+    {
+        "productId": 1,
+        "storeId": 1,
+        "quantity": 100,
+        "price": 10.50
+    },
+    {
+        "productId": 2,
+        "storeId": 1,
+        "quantity": 100,
+        "price": 20.50
+    },
+    {
+        "productId": 3,
+        "storeId": 1,
+        "quantity": 100,
+        "price": 30.50
+    },
+    {
+        "productId": 1,
+        "storeId": 2,
+        "quantity": 100,
+        "price": 20.50
+    },
+    {
+        "productId": 2,
+        "storeId": 2,
+        "quantity": 100,
+        "price": 10.50
+    },
+    {
+        "productId": 3,
+        "storeId": 2,
+        "quantity": 100,
+        "price": 30.50
+    },
+    {
+        "productId": 1,
+        "storeId": 3,
+        "quantity": 100,
+        "price": 20.50
+    },
+    {
+        "productId": 2,
+        "storeId": 3,
+        "quantity": 100,
+        "price": 30.50
+    },
+    {
+        "productId": 3,
+        "storeId": 3,
+        "quantity": 100,
+        "price": 10.50
+    }
+]}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+  <style>
+    body {
+      background-color: #efeee7;
+      font-family: Georgia,"Times New Roman",Times,serif;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+    #main-bio, #contact-info, #bio-image {
+      float: left;
+    }
+    #bio-image {
+      width: 200px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    #main-bio {
+      width: 70%;
+    }
+    #contact-info {
+      width: 30%;
+    }
+    header {
+      background-color: #333333;
+    }
+    h1 {
+      color: #eee;
+      font-size: 28px;
+      line-height: 42px;
+      margin: 0px;
+      padding: 14px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+    }
+    p {
+      line-height: 24px;
+    }
+    a {
+      color: #d21034;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <div class="container">
+
+    <section id="main-bio">
+
+      <h2>Your Name</h2>
+
+      <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum nulla dicta eos suscipit rerum atque consequuntur minus illo vel dolor dolore reprehenderit expedita distinctio natus, animi quas similique sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aliquid officiis repellendus saepe perferendis expedita aut provident at et laboriosam, doloremque fugit debitis maxime distinctio corporis dicta sed quo explicabo?</p><p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum natus esse aliquam mollitia ad pariatur ipsam ullam vero. Expedita, officia nam? Explicabo sapiente dolores eos ducimus mollitia, dicta odio a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quisquam commodi distinctio? Optio tempore quasi illum ipsam quam necessitatibus quidem quis fugit inventore doloribus! Non saepe labore possimus. Ducimus, numquam!</p>
+    </section>
+
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+
+</html>

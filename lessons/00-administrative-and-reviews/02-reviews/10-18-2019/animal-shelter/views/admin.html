@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+
+<body>
+    <h1>Admin</h1>
+    <form>
+        <select id="type">
+            <option value="cat" selected>cat</option>
+            <option value="dog">dog</option>
+        </select>
+        <div><label id="name-label" for="name">Name: </label><input type="text" id="name" name="name">
+        </div>
+        <div><label id="color-label" for="color">Color: </label><input type="text" id="color" name="color">
+        </div>
+        <div><label id="age-label" for="age">Age: </label><input type="number" id="age" name="age">
+        </div>
+        <div><label id="image-label" for="image">Image: </label><input type="text" id="image" name="image">
+        </div>
+        <div><label id="description-label" for="description">Description: </label><input type="text" id="description"
+                name="description">
+
+        </div>
+        <div><label class="cat" id="hairLength-label" for="hairLength">Hair Length: </label><input class="cat"
+                type="text" id="hairLength" name="hairLength">
+        </div>
+        <div><label class="cat" id="mood-label" for="mood">Mood: </label><input class="cat" type="text" id="mood"
+                name="mood">
+
+        </div>
+        <div><label class="dog hidden" id="size-label" for="size">Size: </label><input class="dog hidden" type="text"
+                id="size" name="size">
+        </div>
+        <div><label class="dog hidden" id="breed-label" for="breed">Breed: </label><input class="dog hidden" type="text"
+                id="breed" name="breed">
+        </div>
+
+        <input id="submit" type="submit" value="submit">
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/admin.js"></script>
+</body>
+
+</html>

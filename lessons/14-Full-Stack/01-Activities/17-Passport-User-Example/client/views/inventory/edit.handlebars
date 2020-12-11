@@ -1,0 +1,8 @@
+<form class="update-inventory-form">
+    <input id="productId" name="productId" type="text" style="display:none;" value="{{id}}">
+    <input id="storeId" name="storeId" type="text" style="display:none;" value="{{stores.0.id}}">
+    <h4>Edit {{name}} in {{stores.0.name}}'s Inventory</h4>
+    {{> inventory/form stores.0.inventory}}
+    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script src="/assets/js/inventory/update.js"></script>

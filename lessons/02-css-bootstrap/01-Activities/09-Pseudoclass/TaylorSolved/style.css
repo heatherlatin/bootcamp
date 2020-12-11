@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+.button {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    color: white;
+    background-color: rgb(255, 83, 83);
+    padding: 150px;
+    font-size: 60px;
+}
+
+.button:focus {
+    background-color: blue;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgb(255, 30, 30);
+}
+
+.button:active {
+    background-color: rgb(235, 8, 8);
+}

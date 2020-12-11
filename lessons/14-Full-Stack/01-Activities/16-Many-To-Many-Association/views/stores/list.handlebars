@@ -1,0 +1,14 @@
+<h2>Stores List:</h2>
+<a href="/stores/create" class="btn btn-secondary" type="button"><i class="fa fa-plus"></i> Add Store</a>
+<div class="row">
+{{#each stores}}
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                {{> stores/store }}
+            </div>
+        </div>
+    </div>
+{{/each}}
+</div>
+<script src="/assets/js/store/delete.js"></script>

@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label for="productId">Product</label>
+    <select id="productId" name="productId" class="form-control">
+        <option value="-1" selected disabled>Select a Product</option>
+        {{#each products}}
+        <option value="{{this.id}}">{{this.name}}</option>
+        {{/each}}
+    </select>
+</div>

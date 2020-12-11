@@ -1,0 +1,25 @@
+{
+    "authors": [{
+        "id": 1,
+        "name": "Example Author 1"
+    }, {
+        "id": 2,
+        "name": "Example Author 2"
+    }],
+    "posts": [{
+        "id": 1,
+        "title": "Example Post 1",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime perferendis culpa ducimus odit! Veniam dignissimos error voluptatum est vitae? Nulla doloribus saepe neque consequatur voluptatum recusandae asperiores vero soluta.",
+        "AuthorId": 1
+    }, {
+        "id": 2,
+        "title": "Example Post 2",
+        "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quos excepturi odit reprehenderit sapiente debitis at, unde nostrum minus reiciendis saepe aperiam. Repudiandae repellat laborum sunt neque ad architecto ducimus.",
+        "AuthorId": 1
+    }, {
+        "id": 3,
+        "title": "Example Post 3",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequatur distinctio nihil odio earum doloribus, pariatur id cupiditate, doloremque quam eius molestiae molestias modi eaque veniam at magnam odit velit?",
+        "AuthorId": 2
+    }]
+}
